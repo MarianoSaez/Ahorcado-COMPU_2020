@@ -1,4 +1,4 @@
-# Proyecto-Compu_2020
+# Ahorcado-COMPU_2020
 Juego del ahorcado en consola
 
 [![Build Status](https://travis-ci.org/MarianoSaez/Ahorcado-COMPU_2020.svg?branch=master)](https://travis-ci.org/MarianoSaez/Ahorcado-COMPU_2020)
