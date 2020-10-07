@@ -58,19 +58,19 @@
             null,
             null,
             null,
+            "L",
+            "A",
             null,
-            null,
-            null,
-            "R"
+            null
         ],
         "_Partida__palabra": [
-            "M",
-            "O",
-            "N",
-            "I",
             "T",
-            "O",
-            "R"
+            "E",
+            "C",
+            "L",
+            "A",
+            "D",
+            "O"
         ],
         "_Partida__tipo_palabra": "TECNOLOGIA",
         "_Partida__intentos": 0,
@@ -115,5 +115,27 @@
         "_Partida__tipo_palabra": "TECNOLOGIA",
         "_Partida__intentos": 8,
         "_Partida__nombre_jugador": "OTRO"
+    },
+    "A": {
+        "_Partida__palabra_aciertos": [
+            "A"
+        ],
+        "_Partida__palabra": [
+            "A"
+        ],
+        "_Partida__tipo_palabra": "A",
+        "_Partida__intentos": 2,
+        "_Partida__nombre_jugador": "A"
+    },
+    "F": {
+        "_Partida__palabra_aciertos": [
+            "F"
+        ],
+        "_Partida__palabra": [
+            "F"
+        ],
+        "_Partida__tipo_palabra": "F",
+        "_Partida__intentos": 4,
+        "_Partida__nombre_jugador": "F"
     }
 }
