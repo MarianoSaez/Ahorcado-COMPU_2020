@@ -10,7 +10,7 @@ install:
 script:
     - pip install parameterized
     - coverage run test_ahorcado.py
-    - covergae run test_partida.py
+    - coverage run test_partida.py
 
 after_success:
     - coveralls

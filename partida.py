@@ -55,3 +55,10 @@ class Partida():
     @palabra_aciertos.setter
     def palabra_aciertos(self, value):
         self.__palabra_aciertos = value
+
+    def __str__(self):
+        palabra = ''
+        for i in self.palabra:
+            palabra += i
+        return ('Jugador: %s\nPalabra adivinada: %s\nIntentos Restantes: %s\n'
+                % (self.nombre_jugador, palabra, self.intentos))

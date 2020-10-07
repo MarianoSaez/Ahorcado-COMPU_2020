@@ -38,3 +38,24 @@ class ServicesPartidas():
         if partida.intentos == 0:
             return 'Perdio'
         return 'Continua'
+
+# Adicionales
+    def guardar_historial(self, partidas):
+        with open('saves/historial.json', 'r') as f:
+            resumen = json.load(f)
+            f.close()
+        with open('saves/historial.json', 'w') as f:
+            for i in partidas:
+                resumen[i.nombre_jugador] = i.__dict__
+            json.dump(resumen, f, indent=4)
+            f.close()
+        return resumen
+
+    def mostrar_progreso(self, partida):
+        progreso = list()
+        for i in partida.palabra_aciertos:
+            if i is None:
+                progreso.append('_')
+            else:
+                progreso.append(i)
+        return progreso

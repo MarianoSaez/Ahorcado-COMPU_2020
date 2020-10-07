@@ -5,23 +5,41 @@ class Ahorcado():
     def __init__(self):
         self.service = ServicesPartidas()
 
+    def menu(self):
+        print('====== BIENVENIDO AL AHORCADO ======\n')
+        print('1. Un jugador')
+        print('2. Dos jugadores')
+        seleccion = int(input('Seleccione un tipo de juego: '))
+        if seleccion == 1:
+            return self.un_jugador()
+        elif seleccion == 2:
+            return self.dos_jugadores()
+        else:
+            return False
+
     def un_jugador(self):
         nombre = input('Ingrese su nombre: ')
         dificultad = int(input('Ingrese una dificultad [1-10]: '))
         partida = self.service.iniciar_partida(nombre, dificultad, '', '')
         resultado = 'Continua'
         while resultado == 'Continua':
+            progreso = self.service.mostrar_progreso(partida)
+            for i in progreso:
+                print(i, end=' ')
+            print('\nTipo: ', partida.tipo_palabra)
             try:
-                letra = input('Ingrese un letra: ')
+                letra = input('\nIngrese una letra: ')
                 if letra == 'salir':
-                    # Mensaje de despedida
+                    print('\nCHAU!')
                     return True
                 resultado = self.service.intentar_letra(partida, letra)
             except ValueError:
-                # Mensaje de intentos repetidos
+                print('\nYa probaste esa letra!')
                 continue
             if resultado == 'Gano' or resultado == 'Perdio':
-                # Mostrar un resumen o algo asi
+                print(resultado.upper())
+                print(partida)
+                self.service.guardar_historial([partida])
                 return True
         return False
 
@@ -37,19 +55,25 @@ class Ahorcado():
                                                 tipo_palabra_jugador_1)
         resultado = 'Continua'
         while resultado == 'Continua':
+            progreso = self.service.mostrar_progreso(partida1)
+            for i in progreso:
+                print(i, end=' ')
+            print('\nTipo: ', partida1.tipo_palabra)
             try:
-                letra = input('Ingrese un letra: ')
+                letra = input('\nIngrese una letra: ')
                 if letra == 'salir':
-                    # Mensaje de despedida
+                    print('\nCHAU!')
                     return True
                 resultado = self.service.intentar_letra(partida1, letra)
             except ValueError:
-                # Mensaje de intentos repetidos
+                print('\nYa probaste esa letra!')
                 continue
             if resultado == 'Gano' or resultado == 'Perdio':
-                # Mostrar un resumen o algo asi
+                print(resultado.upper())
+                print(partida1)  # Mostrar un resumen o algo asi
+                self.service.guardar_historial([partida1])
                 break
-        nombre2 = input('Ingrese el nombre del P1: ')
+        nombre2 = input('Ingrese el nombre del P2: ')
         dificultad2 = int(input('Ingrese la dificultad [1-10]: '))
         palabra_jugador_2 = input('Ingrese la palabra que debera adivinar: ')
         tipo_palabra_jugador_2 = input('Ingrese a que categoria pertenece'
@@ -60,16 +84,22 @@ class Ahorcado():
                                                 tipo_palabra_jugador_2)
         resultado = 'Continua'
         while resultado == 'Continua':
+            progreso = self.service.mostrar_progreso(partida2)
+            for i in progreso:
+                print(i, end=' ')
+            print('\nTipo: ', partida2.tipo_palabra)
             try:
-                letra = input('Ingrese un letra: ')
+                letra = input('Ingrese una letra: ')
                 if letra == 'salir':
-                    # Mensaje de despedida
+                    print('\nCHAU!')  # Mensaje de despedida
                     return True
                 resultado = self.service.intentar_letra(partida2, letra)
             except ValueError:
-                # Mensaje de intentos repetidos
+                print('\nYa probaste esa letra!')  # Msj. de intentos repetidos
                 continue
             if resultado == 'Gano' or resultado == 'Perdio':
-                # Mostrar un resumen o algo asi
+                print(resultado.upper())
+                print(partida2)  # Mostrar un resumen o algo asi
+                self.service.guardar_historial([partida1, partida2])
                 return True
         return False
