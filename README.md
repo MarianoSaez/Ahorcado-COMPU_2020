@@ -1,1 +1,3 @@
-# Ahorcado-COMPU_2020
+# Proyecto-Compu_2020
+Juego del ahorcado en consola
+
