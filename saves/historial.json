@@ -1,6 +1,6 @@
 {
     "JUGADOR1": {
-        "_Partida__palabra_aciertos": [
+        "_palabra_aciertos": [
             "C",
             "E",
             "L",
@@ -9,7 +9,7 @@
             "A",
             "R"
         ],
-        "_Partida__palabra": [
+        "_palabra": [
             "C",
             "E",
             "L",
@@ -18,12 +18,12 @@
             "A",
             "R"
         ],
-        "_Partida__tipo_palabra": "ELECTRONICA",
-        "_Partida__intentos": 2,
-        "_Partida__nombre_jugador": "JUGADOR1"
+        "_tipo_palabra": "ELECTRONICA",
+        "_intentos": 2,
+        "_nombre_jugador": "JUGADOR1"
     },
     "JUGADOR2": {
-        "_Partida__palabra_aciertos": [
+        "_palabra_aciertos": [
             "C",
             "O",
             "M",
@@ -36,7 +36,7 @@
             "R",
             "A"
         ],
-        "_Partida__palabra": [
+        "_palabra": [
             "C",
             "O",
             "M",
@@ -49,93 +49,67 @@
             "R",
             "A"
         ],
-        "_Partida__tipo_palabra": "ELECTRONICA",
-        "_Partida__intentos": 3,
-        "_Partida__nombre_jugador": "JUGADOR2"
+        "_tipo_palabra": "ELECTRONICA",
+        "_intentos": 3,
+        "_nombre_jugador": "JUGADOR2"
     },
     "CLAUDIO": {
-        "_Partida__palabra_aciertos": [
+        "_palabra_aciertos": [
             null,
             null,
             null,
-            "L",
-            "A",
             null,
             null
         ],
-        "_Partida__palabra": [
-            "T",
-            "E",
-            "C",
-            "L",
-            "A",
-            "D",
-            "O"
+        "_palabra": [
+            "M",
+            "O",
+            "U",
+            "S",
+            "E"
         ],
-        "_Partida__tipo_palabra": "TECNOLOGIA",
-        "_Partida__intentos": 0,
-        "_Partida__nombre_jugador": "CLAUDIO"
+        "_tipo_palabra": "TECNOLOGIA",
+        "_intentos": 0,
+        "_nombre_jugador": "CLAUDIO"
     },
     "MARIANO": {
-        "_Partida__palabra_aciertos": [
+        "_palabra_aciertos": [
+            "M",
+            "O",
+            "N",
+            "I",
+            "T",
+            "O",
+            "R"
+        ],
+        "_palabra": [
+            "M",
+            "O",
+            "N",
+            "I",
+            "T",
+            "O",
+            "R"
+        ],
+        "_tipo_palabra": "TECNOLOGIA",
+        "_intentos": 63,
+        "_nombre_jugador": "MARIANO"
+    },
+    "MARTIN": {
+        "_palabra_aciertos": [
             "C",
             "A",
             "F",
             "E"
         ],
-        "_Partida__palabra": [
+        "_palabra": [
             "C",
             "A",
             "F",
             "E"
         ],
-        "_Partida__tipo_palabra": "BEBIDA",
-        "_Partida__intentos": 21,
-        "_Partida__nombre_jugador": "MARIANO"
-    },
-    "OTRO": {
-        "_Partida__palabra_aciertos": [
-            "T",
-            "E",
-            "C",
-            "L",
-            "A",
-            "D",
-            "O"
-        ],
-        "_Partida__palabra": [
-            "T",
-            "E",
-            "C",
-            "L",
-            "A",
-            "D",
-            "O"
-        ],
-        "_Partida__tipo_palabra": "TECNOLOGIA",
-        "_Partida__intentos": 8,
-        "_Partida__nombre_jugador": "OTRO"
-    },
-    "A": {
-        "_Partida__palabra_aciertos": [
-            "A"
-        ],
-        "_Partida__palabra": [
-            "A"
-        ],
-        "_Partida__tipo_palabra": "A",
-        "_Partida__intentos": 2,
-        "_Partida__nombre_jugador": "A"
-    },
-    "F": {
-        "_Partida__palabra_aciertos": [
-            "F"
-        ],
-        "_Partida__palabra": [
-            "F"
-        ],
-        "_Partida__tipo_palabra": "F",
-        "_Partida__intentos": 4,
-        "_Partida__nombre_jugador": "F"
+        "_tipo_palabra": "BEBIDA",
+        "_intentos": 9,
+        "_nombre_jugador": "MARTIN"
     }
 }
