@@ -59,3 +59,21 @@ class ServicesPartidas():
             else:
                 progreso.append(i)
         return progreso
+
+    def recuperar_historial(self, nombre):
+        nombre = nombre.upper()
+        with open('saves/historial.json', 'r') as f:
+            historial = json.load(f)
+            f.close()
+        try:
+            if None in historial[nombre]['_palabra_aciertos']:
+                historial[nombre]['_result'] = 'Perdio'
+            else:
+                historial[nombre]['_result'] = 'Gano'
+            palabra = ''
+            for i in historial[nombre]['_palabra']:
+                palabra += i
+            historial[nombre]['_palabra'] = palabra
+            return historial[nombre]
+        except KeyError:
+            return 'El jugador no existe'

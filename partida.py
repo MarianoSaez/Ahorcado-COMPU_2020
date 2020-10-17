@@ -8,53 +8,53 @@ class Partida():
 
     @property
     def palabra(self):
-        return self.__palabra
+        return self._palabra
 
     @palabra.setter
     def palabra(self, value):
         if value == '':
             raise ValueError
-        self.__palabra = list(value.upper())
+        self._palabra = list(value.upper())
         for i in self.palabra:
             self.palabra_aciertos.append(None)
 
     @property
     def tipo_palabra(self):
-        return self.__tipo_palabra
+        return self._tipo_palabra
 
     @tipo_palabra.setter
     def tipo_palabra(self, value):
         if value == '':
             raise ValueError
-        self.__tipo_palabra = value.upper()
+        self._tipo_palabra = value.upper()
 
     @property
     def intentos(self):
-        return self.__intentos
+        return self._intentos
 
     @intentos.setter
     def intentos(self, value):
         if value < 0:
             raise ValueError
-        self.__intentos = value
+        self._intentos = value
 
     @property
     def nombre_jugador(self):
-        return self.__nombre_jugador
+        return self._nombre_jugador
 
     @nombre_jugador.setter
     def nombre_jugador(self, value):
         if value == '':
             raise ValueError
-        self.__nombre_jugador = value.upper()
+        self._nombre_jugador = value.upper()
 
     @property
     def palabra_aciertos(self):
-        return self.__palabra_aciertos
+        return self._palabra_aciertos
 
     @palabra_aciertos.setter
     def palabra_aciertos(self, value):
-        self.__palabra_aciertos = value
+        self._palabra_aciertos = value
 
     def __str__(self):
         palabra = ''

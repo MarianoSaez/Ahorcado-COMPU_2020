@@ -5,3 +5,4 @@ if __name__ == '__main__':
     play = True
     while play:
         play = juego.menu()
+        input('Pulse una tecla para continuar...')

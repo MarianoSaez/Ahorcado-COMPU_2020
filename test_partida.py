@@ -12,13 +12,13 @@ class TestPartida(unittest.TestCase):
     # palabra: palabra que tiene que adivinar
     def test_constructor_con_valores_iniciales_partida(self):
         partida = Partida('python', 2, 'lenguaje de programacion', 'Claudio')
-        self.assertDictEqual(partida.__dict__, {'_Partida__palabra':
+        self.assertDictEqual(partida.__dict__, {'_palabra':
                                                 ['P', 'Y', 'T', 'H', 'O', 'N'],
-                                                '_Partida__tipo_palabra':
+                                                '_tipo_palabra':
                                                 'LENGUAJE DE PROGRAMACION',
-                                                '_Partida__intentos': 2,
-                                                '_Partida__nombre_jugador': 'CLAUDIO',
-                                                '_Partida__palabra_aciertos':
+                                                '_intentos': 2,
+                                                '_nombre_jugador': 'CLAUDIO',
+                                                '_palabra_aciertos':
                                                 [None, None, None, None, None,
                                                  None], })
 
@@ -53,13 +53,13 @@ class TestPartida(unittest.TestCase):
                                                      'lenguaje de programacion'
                                                      )
 
-        self.assertDictEqual(partida.__dict__, {'_Partida__palabra':
+        self.assertDictEqual(partida.__dict__, {'_palabra':
                                                 ['P', 'Y', 'T', 'H', 'O', 'N'],
-                                                '_Partida__tipo_palabra':
+                                                '_tipo_palabra':
                                                 'LENGUAJE DE PROGRAMACION',
-                                                '_Partida__intentos': 18,
-                                                '_Partida__nombre_jugador': 'CLAUDIO',
-                                                '_Partida__palabra_aciertos':
+                                                '_intentos': 18,
+                                                '_nombre_jugador': 'CLAUDIO',
+                                                '_palabra_aciertos':
                                                 [None, None, None, None,
                                                     None, None], })
 
@@ -72,11 +72,11 @@ class TestPartida(unittest.TestCase):
         tipo_palabra = partida.tipo_palabra
         palabra_acierto = partida.palabra_aciertos
         intentos = partida.intentos
-        self.assertDictEqual(partida.__dict__, {'_Partida__palabra': palabra,
-                                                '_Partida__tipo_palabra': tipo_palabra,
-                                                '_Partida__intentos': intentos,
-                                                '_Partida__nombre_jugador': 'CLAUDIO',
-                                                '_Partida__palabra_aciertos':
+        self.assertDictEqual(partida.__dict__, {'_palabra': palabra,
+                                                '_tipo_palabra': tipo_palabra,
+                                                '_intentos': intentos,
+                                                '_nombre_jugador': 'CLAUDIO',
+                                                '_palabra_aciertos':
                                                 palabra_acierto, })
 
     # La dificultad de los intentos es de 1-10

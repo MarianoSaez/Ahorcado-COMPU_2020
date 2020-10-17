@@ -6,7 +6,7 @@ from unittest.mock import patch
 
 class TestAhorcado(unittest.TestCase):
     @parameterized.expand([
-     ('Claudio', 1, ['P', 'A', 'L', 'A', 'B', 'R', 'A', '1', '2', '3'])
+     ('Claudio', 2, ['P', 'A', 'L', 'A', 'B', 'R', 'A', '1', '2', '3'])
     ])
     # Inicial para un solo jugador, seleccionando la palabra aleatoriamente.
     # ingresa datos [nombre, dificultad, letras_para_adivinar]
