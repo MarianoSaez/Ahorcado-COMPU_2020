@@ -11,6 +11,7 @@ script:
     - pip install parameterized
     - coverage run test_ahorcado.py
     - coverage run -a test_partida.py
+    - coverage run -a test_extra.py
 
 after_success:
     - coveralls

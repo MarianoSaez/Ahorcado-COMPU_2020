@@ -28,7 +28,7 @@ class TestExtra(unittest.TestCase):
     # Normal output => historial : diccionario
     # Error => 'El jugador no existe' : String
     @parameterized.expand([
-        ('Jugador1',
+        ('Jugador11',
             {
              "_palabra_aciertos": [
                 "C",
@@ -42,7 +42,7 @@ class TestExtra(unittest.TestCase):
              "_palabra": "CELULAR",
              "_tipo_palabra": "ELECTRONICA",
              "_intentos": 2,
-             "_nombre_jugador": "JUGADOR1",
+             "_nombre_jugador": "JUGADOR11",
              "_result": "Gano"}),
         ('Alguien_que_no_existe', 'El jugador no existe')
     ])

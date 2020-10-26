@@ -1,5 +1,5 @@
 {
-    "JUGADOR1": {
+    "JUGADOR11": {
         "_palabra_aciertos": [
             "C",
             "E",
@@ -20,7 +20,7 @@
         ],
         "_tipo_palabra": "ELECTRONICA",
         "_intentos": 2,
-        "_nombre_jugador": "JUGADOR1"
+        "_nombre_jugador": "JUGADOR11"
     },
     "JUGADOR2": {
         "_palabra_aciertos": [
@@ -111,5 +111,28 @@
         "_tipo_palabra": "BEBIDA",
         "_intentos": 9,
         "_nombre_jugador": "MARTIN"
+    },
+    "JUGADOR1": {
+        "_palabra_aciertos": [
+            "C",
+            "E",
+            "L",
+            "U",
+            "L",
+            "A",
+            "R"
+        ],
+        "_palabra": [
+            "C",
+            "E",
+            "L",
+            "U",
+            "L",
+            "A",
+            "R"
+        ],
+        "_tipo_palabra": "ELECTRONICA",
+        "_intentos": 2,
+        "_nombre_jugador": "JUGADOR1"
     }
 }
